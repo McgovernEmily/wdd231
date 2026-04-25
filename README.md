@@ -16,3 +16,6 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 ## Other commands
 
 - `npm run build` to build final files when you are ready to turn in.
+
+## Where I go for Netify link
+https://marvelous-empanada-e304d6.netlify.app/
