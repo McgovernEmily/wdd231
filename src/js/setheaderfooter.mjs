@@ -6,7 +6,7 @@ function setHeaderInfo(data) {
   disclaimer.innerHTML = data.fullName;
   document.querySelector("head > title").textContent = data.fullName;
   document.querySelector(".hero-banner > img").src = data.images[0].url;
-  document.querySelector(".hero-banner_content").innerHTML =
+  document.querySelector(".herobanner_content").innerHTML =
     parkInfoTemplate(data);
 }
 
@@ -15,7 +15,7 @@ function setFooter(data) {
   footerEl.insertAdjacentHTML("afterbegin", footerTemplate(data));
 }
 
-export default function setHeaderFooter(parkData) {
+export default function setHeaderFooter(parkData){
   setHeaderInfo(parkData);
   setFooter(parkData);
 }
