@@ -277,25 +277,26 @@ a:hover {
   padding: 0 1em;
 }
 
-/* Intro and info sections */
+/* intro and info stuffs*/
 
 .intro {
-  padding: 1em;
+  padding: 15px;
 }
 
 .intro>h1 {
   font-family: var(--bs-font-serif);
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: normal;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  padding: 1em;
+  gap: 15px;
+  padding: 15px;
 }
 
+/* Remember that * does all */
 .info>* {
   flex: 1;
 }
@@ -307,8 +308,6 @@ a:hover {
     align-items: stretch;
   }
 }
-
-/* Media card styles */
 
 .media-card a {
   text-decoration: none;
@@ -329,23 +328,21 @@ a:hover {
   color: var(--bs-grey-2);
 }
 
-/* footer styles */
-
 .park-footer {
   background-image: url("../images/topo_pattern.png");
-  padding: 1.5rem;
+  padding: 20px;
 }
 
 .park-footer h3 {
   font-family: var(--bs-font-serif);
   text-transform: uppercase;
   font-size: 0.8em;
-  margin-top: 0.5rem;
+  margin-top: 5px;
 }
 
 .park-footer h4 {
-  margin-top: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 0.8em;
 }
 
@@ -353,5 +350,5 @@ a:hover {
   font-size: 0.8em;
   line-height: 1;
   color: var(--bs-grey-2);
-  margin: 0.5rem 0;
+  margin: 10px 0;
 }

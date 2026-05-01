@@ -1,5 +1,5 @@
 export function parkInfoTemplate(info) {
-  return `<a href="/" class="hero-banner_title">${info.fullname}</a>
+  return `<a href="/" class="hero-banner_title">${info.name}</a>
     <p class="hero-banner_subtitle">
       <span>${info.designation}</span>
       <span>${info.states}</span>
