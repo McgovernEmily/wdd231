@@ -1,0 +1,31 @@
+/* intro and info stuffs*/
+
+.intro {
+  padding: 15px;
+}
+
+.intro>h1 {
+  font-family: var(--bs-font-serif);
+  font-size: 2.3em;
+  font-weight: normal;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Remember that * does all */
+.info>* {
+  flex: 1;
+}
+
+@media screen and (min-width: 630px) {
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
