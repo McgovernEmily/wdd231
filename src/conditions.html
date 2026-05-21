@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[Park Name]</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/conditions.js"></script>
   </head>
   <body>
     <p class="disclaimer">
@@ -61,44 +61,6 @@
             <span class="visually-hidden">Open</span> Menu
           </button>
         </div>
-        <!---
-        <nav class="global-nav">
-          <h2 class="global-nav__section-heading">Explore this Park</h2>
-          <ul class="global-nav__list">
-            <li>
-              <div class="global-nav__split-button">
-                <a href="#">Plan Your Visit</a>
-                <button class="global-nav__split-button__toggle">
-                  <span class="visually-hidden"
-                    >Toggle submenu for Plan Your Visit</span
-                  >
-                  <svg class="icon" role="presentation" focusable="false">
-                    <use xlink:href="/images/sprite.symbol.svg#arrow"></use>
-                  </svg>
-                </button>
-                <a href="#">Learn About the Part</a>
-                <button class="global-nav__split-button__toggle">
-                  <span class="visually-hidden"
-                    >Toggle submenu for Learn About the Park</span
-                  >
-                  <svg class="icon" role="presentation" focusable="false">
-                    <use xlink:href="/images/sprite.symbol.svg#arrow"></use>
-                  </svg>
-                </button>
-                <a href="#">Get Involved</a>
-                <button class="global-nav__split-button__toggle">
-                  <span class="visually-hidden"
-                    >Toggle submenu for Get Involved</span
-                  >
-                  <svg class="icon" role="presentation" focusable="false">
-                    <use xlink:href="/images/sprite.symbol.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        -->
       </section>
       <section id="park-header">
         <div class = "hero-banner">
@@ -159,12 +121,32 @@
       </section>
     </header>
     <main id="main">
-      <section class="intro">
+      
+      <h1>Current Conditions</h1>
 
+      <section class="alerts">
+        <h2>Alerts</h2>
+        <ul></ul>
       </section>
-      <section class="info">
 
+      <section class="visitor">
+        <h2>Visitor Services</h2>
+        <details name="all-details">
+          <summary>Visitor Centers</summary>
+          <ul></ul>
+        </details>
+        <ul></ul>
       </section>
+
+      <section class="activities">
+        <h2>Activities</h2>
+        <details name="all-details">
+          <summary>All Activities</summary>
+          <ul></ul>
+        </details>
+        <ul></ul>
+      </section>
+
     </main>
     <footer id="park-footer" class = "park-footer"></footer>
   </body>

@@ -37,3 +37,25 @@ export function footerTemplate(info) {
   </section>
     `;
 }
+
+export function alertTemplate(alerts){
+  let type = "";
+
+  switch (alerts.category) {
+    case "Park Closure":
+      type = "closure";
+      break;
+    default:
+      type = alerts.category.toLowerCase();
+  }
+
+  return `<li class = "alert">
+    <svg class="icon" focusable="false" aria-hidden = "true">
+      <use xlink:href = "/images/sprite.symbol.svg#alert-${type}"></use>
+    </svg>
+    <div>
+      <h3 class="alert-${type}">${alerts.title}</h3>
+      <p>${alerts.description}</p>
+    </div>
+    </li>`;
+}
