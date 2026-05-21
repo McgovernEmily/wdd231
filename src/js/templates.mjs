@@ -59,3 +59,15 @@ export function alertTemplate(alerts){
     </div>
     </li>`;
 }
+
+export function visitorcenterTemplate(centers) {
+  
+  return `<li class = "visitorCenters">
+    <div>
+      <h3 class="center-${centers.name}">${centers.name}</h3>
+      <p>${centers.description}</p>
+      <p>${centers.directionsInfo}</p>
+    </div>
+    </li>`
+
+}
