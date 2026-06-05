@@ -25,6 +25,7 @@
   background-color: var(--bs-black);
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   fill: white;
 }
@@ -124,4 +125,45 @@
   width: 30px;
   height: 30px;
   padding: 2px;
+}
+
+.global-nav {
+  width: 100%;
+  border-top: 1px solid #333;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.global-nav button {
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.global-nav svg {
+  --icon-color: white;
+}
+
+/* styles to control opening and closing of menus */
+
+.global-nav_toggle-closed {
+  display: flex;
+  align-items: center;
+}
+.global-nav_toggle-open {
+  display: none;
+  align-items: center;
+}
+
+.global-nav_toggle[aria-expanded="true"] > .global-nav_toggle-closed {
+  display: none;
+}
+.global-nav_toggle[aria-expanded="true"] > .global-nav_toggle-open {
+  display: flex;
+}
+
+.global-nav.show {
+  max-height: 1000px;
 }

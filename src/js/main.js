@@ -1,4 +1,4 @@
-import { getParkData, parkInfoLinks, getInfoLinks} from "./parkService.mjs";
+import { getParkData, getInfoLinks} from "./parkService.mjs";
 import setHeaderFooter from "./setheaderfooter.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
 
@@ -24,6 +24,29 @@ async function init() {
   setHeaderFooter(parkData);
   setParkIntro(parkData);
   setParkInfoLinks(links);
+  enableNavigation();
+}
+
+function enableNavigation() {
+  const menubutton = document.querySelector("#global-nav-toggle");
+
+  menubutton.addEventListener("click", (ev) => {
+    let target = ev.target;
+
+    document.querySelector(".global-nav").classList.toggle("show");
+
+    if (target.tagName != "BUTTON") {
+      target = target.closest("button");
+    }
+
+    if (document.querySelector(".global-nav").classList.contains("show")){
+      target.setAttribute("aria-expanded", true);
+    } else {
+      target.setAttribute("aria-expanded", false);
+    }
+
+    console.log("toggle");
+  });
 }
 
 init();
