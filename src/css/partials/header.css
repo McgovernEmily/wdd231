@@ -272,11 +272,20 @@
     display: none;
   }
 
-  .global-nav_submenu,
-  .global-nav_list {
+  .global-nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .global-nav_list {
+    border-top: none;
+  }
+
+  .global-nav_submenu {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
   }
 
   .global-nav_split-button {
@@ -285,12 +294,6 @@
 
   .global-nav_split-button>button {
     display: none;
-  }
-
-  .global-nav_submenu {
-    display: flex;
-    flex-direction: column;
-    max-height: fit-content;
   }
 
   .global-nav_submenu a {
